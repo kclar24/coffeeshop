@@ -12,4 +12,10 @@
  *
  *= require_tree .
  *= require_self
+ *= require animate
  */
+
+body {
+  margin: 0;
+  font-family: 'BenchNine', serif;
+}

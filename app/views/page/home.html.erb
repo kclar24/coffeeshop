@@ -1,2 +1,27 @@
-<h1>Page#home</h1>
-<p>Find me in app/views/page/home.html.erb</p>
+
+<div class="wrapper">
+  <div class="topContainer">
+    <img src="../../assets/deal.png" id="dealHome">
+  </div>
+
+  <div class="pageContainer">
+    <div id="homeHeroContainer">
+      <img id="logoHome" src="../../assets/logo.png" />
+      <div id="pickerSection">
+          <%= link_to image_tag("outreachButton.png", :class => "pagePicker animated jello"), page_outreach_path %>
+          <%= link_to image_tag("locationButton.png", :class => "pagePicker animated jello"), page_location_path %>
+          <%= link_to image_tag("menuButton.png", :class => "pagePicker animated jello"), page_menu_path %>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footerContainer">
+      <div id="socialContainer">
+        <img src="../../assets/facebook.png" class="socialIcon">
+        <img src="../../assets/twitter.png" class="socialIcon">
+        <img src="../../assets/insta.png" class="socialIcon">
+      </div>
+    </div>
+  </footer>
+</div>

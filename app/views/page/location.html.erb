@@ -1,2 +1,29 @@
-<h1>Page#location</h1>
-<p>Find me in app/views/page/location.html.erb</p>
+<div class="topContainer">
+  <%= link_to image_tag("backButton.png", :class => "backButton animated jello"), root_path %>
+</div>
+
+<div class="pageContainer">
+  <div id="mapContainer">
+    <iframe
+    width="300"
+    height="300"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDVTURgnD0FkALiLzqAkYUvyhxyNwrfNU0&q=Mount+Fuji" allowfullscreen>
+    </iframe>
+    <div id="mapFooter">
+      <p>
+        That's right, we're located right at the peak of beautiful Mount Fuji!  <br />What, you thought our name was a joke?  Enjoy your climb, friend!
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="footerContainer">
+  <div id="socialContainer">
+    <img src="../../assets/facebook.png" class="socialIcon">
+    <img src="../../assets/twitter.png" class="socialIcon">
+    <img src="../../assets/insta.png" class="socialIcon">
+  </div>
+
+</div>

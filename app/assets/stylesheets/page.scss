@@ -1,3 +1,257 @@
 // Place all the styles related to the Page controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper {
+  margin-left:auto;
+  margin-right: auto;
+  width: 100vw;
+}
+
+.topContainer {
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+  color: #ff9f14;
+  text-align: center;
+  font-size: 10vh;
+  background: url('beansBlack.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+#dealHome {
+  float:right;
+  height: 20vmin;
+  width: auto;
+  position:absolute;
+  top: 50%;
+  right: 0;
+}
+
+.pageContainer {
+  width: 100%;
+  height: 70vh;
+  text-align: right;
+  background-color: #9a9a9a;
+}
+
+/* This container altered by queries later */
+#outreachPageContainer {
+  width: 100%;
+  height: 70vh;
+  text-align: right;
+  background-color: #9a9a9a;
+}
+
+#homeHeroContainer {
+  text-align: right;
+  background: url("fuji2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70vh;
+}
+
+.footerContainer {
+  width: 100%;
+  height: 15vh;
+  background: url('beansBlack.jpg');
+  background-size: cover;
+}
+
+#pickerSection {
+  width: 70vw;
+  position: relative;
+  display: inline-block;
+  float:right;
+
+}
+
+.pagePicker {
+  height: auto;
+  width: 20vw;
+  margin: 50vh 2vw 5vh 0;
+  position: relative;
+  display: inline-block;
+  float:right;
+}
+
+#logoHome {
+  float:left;
+  display: inline-block;
+  position: relative;
+  width: 30vmax;
+  margin-top: -15vh;
+
+}
+
+#socialContainer{
+  margin-left: 15vmin;
+}
+
+.socialIcon {
+  height: 6vmin;
+  display: inline-block;
+  position: relative;
+  margin-left: 2vmin;
+  margin-top: 5vmin;
+  float:left;
+}
+
+footer {
+  clear:both;
+}
+
+.backButton {
+  height: 11vmin;
+  margin: 2vmin 0 0 2vmin;
+  position: relative;
+  display: inline-block;
+  float:left;
+}
+
+#menuBox {
+  width: 70vw;
+  height: 70vh;
+  margin: 0 10vw 0 15vw;
+  background-color: white;
+  border-left: 3px solid #ff9f14;
+  border-right: 3px solid #ff9f14;
+  text-align: left;
+  position:relative;
+}
+
+#menuTitle {
+  font-size: 6vmin;
+  color: #ff9f14;
+  margin: 0 0 0 2vw;
+  font-family: 'Slabo 27px';
+}
+
+.menuColumn {
+  font-size: 4vmin;
+  color: #ff9f14;
+  margin: 2vh 0 0 2vw;
+  display: inline-block;
+  width: 30vw;
+  font-family: 'Slabo 27px';
+}
+
+#menuFooter {
+  font-family: 'Slabo 27px';
+  font-size: 2vmin;
+  margin: 10vh 0 0 2vw;
+}
+
+#mapContainer {
+  text-align: center;
+  margin: 0 10vw 0 15vw;
+  width: 70vw;
+  height: 70vh;
+  background-color: white;
+  border-left: 3px solid #ff9f14;
+  border-right: 3px solid #ff9f14;
+}
+
+#mapFooter {
+  font-size: 3vmin;
+  color: #ff9f14;
+  width:auto;
+  margin: 5vh 7vw;
+  text-align: left;
+  font-family: 'Slabo 27px';
+}
+
+#outreachBox {
+  width: 70vw;
+  height: 70vh;
+  margin: 0 10vw 0 15vw;
+  background-color: white;
+  border-left: 3px solid #ff9f14;
+  border-right: 3px solid #ff9f14;
+  text-align: left;
+  position:relative;
+}
+
+#outreachTitle {
+  font-size: 6vmin;
+  color: #ff9f14;
+  margin: 0 0 0 2vw;
+  font-family: 'Slabo 27px';
+}
+
+.outreachColumn {
+  font-size: 4vmin;
+  color: #ff9f14;
+  margin: 2vh 0 0 2vw;
+  display: inline-block;
+  width: 21vw;
+  height: 40vh;
+  font-family: 'Slabo 27px';
+}
+
+.outreachPic {
+  width: 20vw;
+}
+
+.outreachColumnText {
+  margin: 0;
+}
+
+#mapFooterSmall {
+  display:none;
+}
+
+@media only screen and (max-width: 520px) {
+  .pagePicker {
+    height: auto;
+    width: 20vmax;
+    margin: 0 2vw 5vh 0;
+    position: relative;
+    float:left;
+  }
+
+  #pickerSection {
+    width: 25vmax;
+    position: relative;
+    display: inline-block;
+    float:right;
+    margin-top: 30vh;
+  }
+
+  iframe {
+    width: inherit;
+  }
+}
+
+@media only screen and (max-width: 853px) {
+
+  #mapFooter {
+    font-size: 10px;
+  }
+
+  .outreachColumn {
+    width: 60vw;
+    font-size: 25px;
+  }
+
+  #outreachBox {
+    width: 70vw;
+    height: auto;
+    margin: 0 10vw 0 15vw;
+  }
+
+  #outreachPageContainer {
+    height:auto;
+  }
+
+  .outreachPic {
+    width: 50vmin;
+  }
+
+  #outreachTitle {
+    font-size: 25px;
+  }
+
+}

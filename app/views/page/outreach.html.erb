@@ -1,2 +1,36 @@
-<h1>Page#outreach</h1>
-<p>Find me in app/views/page/outreach.html.erb</p>
+<div class="topContainer">
+  <%= link_to image_tag("backButton.png", :class => "backButton animated jello"), root_path %>
+</div>
+
+<div id="outreachPageContainer">
+  <div id="outreachBox">
+    <div id="outreachTitle">
+      PEAK BREW
+      Outreach Programs
+      <hr />
+    </div>
+    <div class="outreachColumn">
+      <div class="outreachColumnText">Nature Conservation
+      </div><br />
+      <%= image_tag("nature.jpg", :class => "outreachPic") %>
+    </div>
+    <div class="outreachColumn">
+      <div class="outreachColumnText">Space Exploration
+      </div><br />
+      <%= image_tag("space.jpg", :class => "outreachPic") %>
+    </div>
+    <div class="outreachColumn">
+      <div class="outreachColumnText">Youth
+      </div><br />
+      <%= image_tag("youth.jpg", :class => "outreachPic") %>
+    </div>
+  </div>
+</div>
+
+<div class="footerContainer">
+  <div id="socialContainer">
+    <img src="../../assets/facebook.png" class="socialIcon">
+    <img src="../../assets/twitter.png" class="socialIcon">
+    <img src="../../assets/insta.png" class="socialIcon">
+  </div>
+</div>
